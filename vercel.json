@@ -1,0 +1,8 @@
+{
+  "functions": { "api/engine.js": { "includeFiles": "views/**" } },
+  "rewrites": [
+    { "source": "/", "destination": "/api/engine?r=root" },
+    { "source": "/search", "destination": "/api/engine?r=search" },
+    { "source": "/n/:id", "destination": "/api/engine?r=note&id=:id" }
+  ]
+}
